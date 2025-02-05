@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Estrada - Bogotá</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            border: 3px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            border: 2px solid black;
+        }
+        .image-container, .map-container {
+            flex: 1;
+            border-right: 2px solid black;
+            padding: 10px;
+        }
+        .map-container {
+            border-right: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>La Estrada</h2>
+        </div>
+        <div class="content">
+            <div class="image-container">
+                <h3>Imagen del barrio</h3>
+                <img src="image.png" alt="Imagen del barrio">
+            </div>
+            <div class="map-container">
+                <h3>Mapa</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6255126788133!2d-74.0954!3d4.6833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85b65f4e8d9f%3A0x2b8f5f96e6e39c5e!2sLa%20Estrada%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1707070800000" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
